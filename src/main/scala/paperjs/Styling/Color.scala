@@ -27,7 +27,7 @@ trait Gradient extends js.Object {
 
 @js.native
 @JSName("paper.Color")
-class Color(red: Double, green: Double, blue: Double, alpha: Double) extends js.Object {
+class Color(val red: Double, val green: Double, val blue: Double, val alpha: Double) extends js.Object {
   def this(gray: Double, alpha: Double) = this(0,0,0,0)
   def this(gradient: Gradient, origin: Point, destination: Point,
            highlight: Point = Point(0,0)) = this(0,0,0,0)
